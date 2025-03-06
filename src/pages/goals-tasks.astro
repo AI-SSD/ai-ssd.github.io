@@ -1,0 +1,77 @@
+---
+import MainLayout from '../layouts/main.astro';
+---
+
+<MainLayout content={{ title: 'Goals & Tasks | AI Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Goals & Tasks</h1>
+    
+    <div class="space-y-12">
+      <!-- Mission Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+        <p class="text-lg">
+          Our mission is to advance the field of secure software development through innovative AI-powered tools and methodologies. 
+          We aim to create a future where security is seamlessly integrated into the software development lifecycle, 
+          reducing vulnerabilities and enhancing the overall security posture of software systems.
+        </p>
+      </div>
+      
+      <!-- Goals Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Strategic Goals</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Research Excellence</h3>
+            <p>Conduct cutting-edge research in AI-powered secure software development techniques and methodologies.</p>
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Tool Development</h3>
+            <p>Create practical, open-source tools that integrate AI capabilities into secure software development workflows.</p>
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Industry Collaboration</h3>
+            <p>Partner with industry leaders to ensure our research addresses real-world security challenges.</p>
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Education & Training</h3>
+            <p>Develop educational resources and training programs to build capacity in AI-powered secure software development.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Current Tasks Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Current Tasks</h2>
+        <div class="space-y-4">
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Vulnerability Detection Framework</h3>
+            <p class="mb-2">Developing an AI-powered framework for detecting vulnerabilities in source code across multiple programming languages.</p>
+            <div class="w-full bg-muted rounded-full h-2.5 mt-4">
+              <div class="bg-primary h-2.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <p class="text-sm text-muted-foreground mt-1">75% Complete</p>
+          </div>
+          
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Secure Code Generation Assistant</h3>
+            <p class="mb-2">Creating an AI assistant that helps developers write secure code by providing real-time suggestions and security checks.</p>
+            <div class="w-full bg-muted rounded-full h-2.5 mt-4">
+              <div class="bg-primary h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+            <p class="text-sm text-muted-foreground mt-1">45% Complete</p>
+          </div>
+          
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Security Testing Automation</h3>
+            <p class="mb-2">Building tools to automate security testing processes using machine learning techniques.</p>
+            <div class="w-full bg-muted rounded-full h-2.5 mt-4">
+              <div class="bg-primary h-2.5 rounded-full" style="width: 30%"></div>
+            </div>
+            <p class="text-sm text-muted-foreground mt-1">30% Complete</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout> 
