@@ -22,9 +22,9 @@ export function News({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="mr-2"
           >
             <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
@@ -49,9 +49,9 @@ export function News({
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="ml-1"
             >
               <path d="M5 12h14"></path>
