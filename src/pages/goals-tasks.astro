@@ -1,0 +1,92 @@
+---
+import MainLayout from '../layouts/main.astro';
+---
+
+<MainLayout content={{ title: 'Goals & Tasks | AI Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Goals & Tasks</h1>
+    
+    <div class="space-y-12">
+      <!-- Mission Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+        <p class="text-lg">
+          Our mission is to incorporate AISE into quality assurance processes, demonstrating that it can significantly enhance the ability to ensure software quality, with a focus on code dependability, and security.
+        </p>
+      </div>
+      
+      <!-- Goals Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Objectives</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Objective 1</h3>
+            <p>Use GenAI/LLMs to leverage syntatic and workflow knowledge for accurate bug and vulnerability identification.</p>
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Objective 2</h3>
+            <p>Use novel GenAI/LLM-based techniques to systematically generate code
+              patches according to best practices and principles of software development</p>
+          </div>
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Objective 3</h3>
+            <p>Produce tools for automated test case generation, generating
+              representative test cases on demand for fault/failure/attack/intrusion injection</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Current Tasks Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4"> Tasks</h2>
+        <div class="space-y-4">
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Systematic Literature Review</h3>
+            <p class="mb-2">literature related to AI-augmented tools for code analysis, bug detection, automated patch generation, and testing
+              techniques</p>
+          </div>
+
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Baseline Benchmarking</h3>
+            <p class="mb-2">identifying and selecting a set of representative software projects and existing tools for code analysis (from the
+              systematic literature review that is going be conducted in Task 1, partially overlaping), bug detection, patch
+              generation, and test cases generation</p>
+          </div>
+
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">GenAI Code Analysis and Bug Detection</h3>
+            <p class="mb-2">development and implementation of LLM’s and deep learning techniques for code analysis and bug detection.</p>
+          </div>
+
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Patch Generation and Validation</h3>
+            <p class="mb-2">develop AI-based methods for generating and validating patches for identified bugs (...), developing automated
+              testing frameworks to validate these patches against a variety of test cases</p>
+          </div>
+          
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Dependability: fault/failure test case generation</h3>
+            <p class="mb-2">GenAI techniques to create realistic scenarios that test the resilience of software under various fault
+              conditions (...), identifying/using common fault types, developing algorithms to generate corresponding test
+              cases</p>
+          </div>
+          
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Security: attack/intrusion test case generation</h3>
+            <p class="mb-2">generating test cases that simulate attacks and intrusions (...) integrate existing knowledge into GenAI
+              solutions to create realistic and diverse attack scenarios that test the security defenses of software
+              systems</p>
+          </div>
+          
+          <div class="bg-card p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-medium mb-2">Integration</h3>
+            <p class="mb-2">integration of tools and techniques (...) combining the code analysis, bug detection, patch generation,
+              fault/failure test case generation, and attack/intrusion test case generation modules (...) into CI/CD
+              pipelines</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout> 
