@@ -1,4 +1,5 @@
 import { Card, CardFooter, CardHeader } from "./ui/card";
+import { Image } from "astro:assets";
 
 export function TeamMember({
   name,
@@ -14,7 +15,7 @@ export function TeamMember({
   personalWebsite?: string | null;
 }) {
   return (
-    <Card className="overflow-hidden items-center max-w-[280px]">
+    <Card className="overflow-hidden items-center w-[250px]">
       <img
         src={image}
         alt={name}

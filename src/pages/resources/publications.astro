@@ -1,4 +1,5 @@
 ---
+import { Publication } from '@/components/Publication';
 import MainLayout from '../../layouts/main.astro';
 ---
 
@@ -12,30 +13,28 @@ import MainLayout from '../../layouts/main.astro';
         <h2 class="text-2xl font-semibold mb-4">2025</h2>
         <div class="space-y-6">
           <!-- Publication Item -->
-          <div class="bg-card p-6 rounded-lg shadow-sm">
-            <h3 class="text-xl font-medium mb-2">Title</h3>
-            <p class="text-muted-foreground mb-3">Authors</p>
-            <p class="mb-4">
-              Abstract?
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <a href="#" class="inline-flex items-center px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                Link?
-              </a>
-              <a href="#" class="inline-flex items-center px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                Code?
-              </a>
-              <a href="#" class="inline-flex items-center px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-                DOI?
-              </a>
-          </div>
-        </div>
+          <Publication
+            title="Title"
+            authors={["Author 1", "Author 2"]}
+            abstract="Abstract"
+            link="#"
+            code="#"
+            pdf="#"
+          />
       </div>
     </div>
     <div class="space-y-8">
       <h2 class="text-2xl font-semibold mb-4">2024</h2>
       <div class="space-y-6">
         <!-- Publication Item -->
+        <Publication
+          title="Title"
+          authors={["Author 1", "Author 2"]}
+          abstract="Abstract"
+          link="#"
+          code="#"
+          pdf="#" 
+        />
       </div>
     </div>
   </section>
