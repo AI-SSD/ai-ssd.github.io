@@ -29,6 +29,7 @@ export function TeamMember({
             href={googleScholar}
             className="text-primary hover:text-primary/80"
             aria-label="Google Scholar"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +48,7 @@ export function TeamMember({
             href={linkedin}
             className="text-primary hover:text-primary/80"
             aria-label="LinkedIn"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +73,7 @@ export function TeamMember({
             href={personalWebsite}
             className="text-primary hover:text-primary/80"
             aria-label="Personal Website"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
