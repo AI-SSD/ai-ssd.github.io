@@ -1,4 +1,5 @@
 import { Card, CardFooter, CardHeader } from "./ui/card";
+import { Image } from "astro:assets";
 
 export function TeamMember({
   name,
@@ -14,7 +15,7 @@ export function TeamMember({
   personalWebsite?: string | null;
 }) {
   return (
-    <Card className="overflow-hidden items-center max-w-[280px]">
+    <Card className="overflow-hidden items-center w-[250px]">
       <img
         src={image}
         alt={name}
@@ -29,6 +30,7 @@ export function TeamMember({
             href={googleScholar}
             className="text-primary hover:text-primary/80"
             aria-label="Google Scholar"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +49,7 @@ export function TeamMember({
             href={linkedin}
             className="text-primary hover:text-primary/80"
             aria-label="LinkedIn"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +74,7 @@ export function TeamMember({
             href={personalWebsite}
             className="text-primary hover:text-primary/80"
             aria-label="Personal Website"
+            target="_blank"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

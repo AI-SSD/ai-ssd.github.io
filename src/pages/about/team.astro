@@ -1,26 +1,25 @@
 ---
 import MainLayout from '../../layouts/main.astro';
 import { TeamMember } from '../../components/TeamMember.tsx';
+import joaodonato from '../../images/team/joaodonato.jpeg';
+import joaorcampos from '../../images/team/joaorcampos.jpeg';
+import charlesgoncalves from '../../images/team/charlesgoncalves.jpeg';
+import josepereira from '../../images/team/josepereira.jpeg';
+import nunolourenco from '../../images/team/nunolourenco.jpeg';
 ---
 
 <MainLayout content={{ title: 'Our Team | AI Secure Software Development' }}>
-  <section class="container mx-auto py-8">
+  <section class="container py-8 justify-items-center space-between">
     <h1 class="text-3xl font-bold mb-8">Principal Investigator</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <TeamMember name="João R. Campos" image="/team/joaorcampos.jpeg" linkedin="https://www.linkedin.com/in/jo%C3%A3o-r-campos-38876015a/" googleScholar="https://scholar.google.com/citations?user=_kcaqoEAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/joao-campos" />
+    <div class="flex justify-center">
+      <TeamMember name="João R. Campos" image={joaorcampos.src} linkedin="https://www.linkedin.com/in/jo%C3%A3o-r-campos-38876015a/" googleScholar="https://scholar.google.com/citations?user=_kcaqoEAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/joao-campos" />
     </div>
-    <h1 class="text-3xl font-bold mb-8 mt-16">Team Members</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaom-cdonato/"  />
-      <TeamMember name="Charles Gonçalves" image="/team/charlesgoncalves.JPG" linkedin="https://www.linkedin.com/in/charles-goncalves-ba010917/" googleScholar="https://scholar.google.com/citations?hl=en&user=9sXqxd4AAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/charles-goncalves"/>
-      <TeamMember name="José D'Abruzzo Pereira" image="/team/josepereira.jpeg" linkedin="https://www.linkedin.com/in/jose-alexandre-dabruzzo-pereira/" googleScholar="https://scholar.google.com/citations?hl=en&user=ZPKlxFQAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/jose-pereira"/>
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaodonato/" />
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaodonato/" />
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaodonato/" />
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaodonato/" />
-      <TeamMember name="João Donato" image="/team/joaodonato.jpeg" linkedin="https://www.linkedin.com/in/joaodonato/" />
-      
+    <h1 class="text-3xl font-bold mb-8 mt-16 ">Team Members</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+      <TeamMember name="João Donato" image={joaodonato.src} linkedin="https://www.linkedin.com/in/joaom-cdonato/"  />
+      <TeamMember name="Charles Gonçalves" image={charlesgoncalves.src} linkedin="https://www.linkedin.com/in/charles-goncalves-ba010917/" googleScholar="https://scholar.google.com/citations?hl=en&user=9sXqxd4AAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/charles-goncalves"/>
+      <TeamMember name="José D'Abruzzo Pereira" image={josepereira.src} linkedin="https://www.linkedin.com/in/jose-alexandre-dabruzzo-pereira/" googleScholar="https://scholar.google.com/citations?hl=en&user=ZPKlxFQAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/jose-pereira"/>
+      <TeamMember name="Nuno Lourenço" image={nunolourenco.src} linkedin="https://www.linkedin.com/in/nuno-louren%C3%A7o-a05647317/" googleScholar="https://scholar.google.com/citations?hl=en&user=IC4uQLcAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/nuno-lourenco"/>
     </div>
-
   </section>
 </MainLayout> 
