@@ -1,75 +1,20 @@
 ---
 import MainLayout from '../layouts/main.astro';
+import { News } from '../components/News.tsx';
+import { Events } from '../components/Events.tsx';
 ---
 
 <MainLayout content={{ title: 'News and Events | AI Secure Software Development' }}>
   <section class="container mx-auto py-8">
     <h1 class="text-4xl font-bold mb-8">News and Events</h1>
     
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <!-- News Section -->
-      <div class="lg:col-span-2 space-y-8">
+      <div class="space-y-8">
         <h2 class="text-2xl font-semibold mb-6">Latest News</h2>
         
         <!-- News Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>June 15, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">New Research Grant Awarded for AI-Powered Vulnerability Detection</h3>
-            <p class="mb-4">
-              Our team has been awarded a $2.5 million research grant to develop advanced AI techniques for 
-              detecting and mitigating security vulnerabilities in software systems. The project will focus on 
-              creating tools that can identify complex vulnerabilities that traditional static analysis tools miss.
-            </p>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Read More
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- News Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>May 22, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">SecureCodeBERT Tool Released as Open Source</h3>
-            <p class="mb-4">
-              We are excited to announce the release of SecureCodeBERT, our AI-powered static analysis tool 
-              for vulnerability detection. The tool is now available as open source on GitHub, allowing developers 
-              and researchers to integrate it into their workflows and contribute to its development.
-            </p>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Read More
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- News Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>April 10, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">New Industry Partnership with TechSecure Inc.</h3>
-            <p class="mb-4">
-              We are pleased to announce a new partnership with TechSecure Inc., a leading cybersecurity company. 
-              This collaboration will focus on developing and evaluating AI-powered security tools for enterprise 
-              software development, with a particular emphasis on supply chain security.
-            </p>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Read More
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
+        <News date="Date" title="Title of news item" description="Description of the news item" link="Link to the news item" />
       </div>
       
       <!-- Events Section -->
@@ -77,75 +22,7 @@ import MainLayout from '../layouts/main.astro';
         <h2 class="text-2xl font-semibold mb-6">Upcoming Events</h2>
         
         <!-- Event Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>July 15-16, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">Workshop on AI for Secure Software Development</h3>
-            <p class="mb-4">
-              Join us for a two-day workshop on AI-powered techniques for secure software development. 
-              The workshop will feature presentations from leading researchers and practitioners in the field, 
-              as well as hands-on sessions with our tools.
-            </p>
-            <div class="flex items-center text-muted-foreground mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Virtual Event</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Register
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Event Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>August 5, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">Webinar: Secure Code Generation with AI</h3>
-            <p class="mb-4">
-              This webinar will explore how AI can be used to generate secure code and provide security-focused 
-              recommendations to developers. Our researchers will demonstrate our latest tools and discuss the 
-              challenges and opportunities in this area.
-            </p>
-            <div class="flex items-center text-muted-foreground mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Online</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Register
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Event Item -->
-        <div class="bg-card rounded-lg shadow-sm overflow-hidden">
-          <div class="p-6">
-            <div class="flex items-center text-muted-foreground mb-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
-              <span>September 20-22, 2023</span>
-            </div>
-            <h3 class="text-xl font-medium mb-2">Conference: AI and Software Security</h3>
-            <p class="mb-4">
-              Our team will be presenting several papers at the International Conference on AI and Software Security. 
-              Join us to learn about the latest research in the field and network with experts from academia and industry.
-            </p>
-            <div class="flex items-center text-muted-foreground mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>San Francisco, CA</span>
-            </div>
-            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-            </a>
-          </div>
-        </div>
+        <Events date="Date" title="Title of event" description="Description of the event" location="Location of the event" link="Link to the event" />
       </div>
     </div>
   </section>
