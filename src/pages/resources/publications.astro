@@ -14,12 +14,12 @@ import MainLayout from '../../layouts/main.astro';
         <div class="space-y-6">
           <!-- Publication Item -->
           <Publication
-            title="Title"
-            authors={["Author 1", "Author 2"]}
-            abstract="Abstract"
-            link="#"
-            code="#"
-            pdf="#"
+            title="GPTs are not the silver bullet: Performance and challenges of using GPTs for security bug report identification"
+            authors={["Horácio L. França", "Katerina Goseva-Popstojanova", "César Teixeira", "Nuno Laranjeiro"]}
+            abstract="Context: Identifying security bugs in software is critical to minimize vulnerability windows. Traditionally, bug reports are submitted through issue trackers and manually analyzed, which is time-consuming. Challenges such as data scarcity and imbalance generally hinder the development of effective machine learning models that could be used to automate this task. Generative Pre-trained Transformer (GPT) models do not require training and are less affected by the imbalance problem. Therefore, they have gained popularity for various text-based classification tasks, apparently becoming a natural highly promising solution for this problem. Objective: This paper explores the potential of using GPT models to identify security bug reports from the perspective of a user of this type of models. We aim to assess their classification performance in this task compared to traditional machine learning (ML) methods, while also investigating how different factors, such as the prompt used and datasets’ characteristics, affect their results. Methods: We evaluate the performance of four state-of-the-art GPT models (i.e., GPT4All-Falcon, Wizard, Instruct, OpenOrca) on the task of security bug report identification. We use three different prompts for each GPT model and compare the results with traditional ML models. The empirical results are based on using bug report data from seven projects (i.e., Ambari, Camel, Derby, Wicket, Nova, OpenStack, and Ubuntu). Results: GPT models show noticeable difficulties in identifying security bug reports, with performance levels generally lower than traditional ML models. The effectiveness of the GPT models is quite variable, depending on the specific model and prompt used, as well as the particular dataset. Conclusion: Although GPT models are nowadays used in many types of tasks, including classification, their current performance in security bug report identification is surprisingly insufficient and inferior to traditional ML models. Further research is needed to address the challenges identified in this paper in order to effectively apply GPT models to this particular domain."
+            link="https://www.sciencedirect.com/science/article/pii/S095058492500117X?casa_token=KWsW-lDzdvUAAAAA:VQhX_17eEQtIqvMt-yUBDpU6D8GGr-I3ujYoIXljAh30uaRskvuAqEOv6iKW7xLo2uVATJmXjGL_"
+            code="https://doi.org/10.5281/zenodo.13754563"
+            pdf="https://www.sciencedirect.com/science/article/pii/S095058492500117X/pdfft?md5=8c743603a72c6c5540112021f2ed94f8&pid=1-s2.0-S095058492500117X-main.pdf"
           />
       </div>
     </div>
