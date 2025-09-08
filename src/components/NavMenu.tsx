@@ -98,6 +98,12 @@ export function NavMenu() {
                 >
                   Acknowledgements & Logos
                 </a>
+                <a
+                  href="/resources/theses"
+                  className="block px-4 py-2 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground"
+                >
+                  Student Theses
+                </a>
               </div>
             </div>
           </div>
