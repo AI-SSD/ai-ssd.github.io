@@ -4,6 +4,7 @@ export function Publication({
   title,
   authors,
   abstract,
+  venue,
   link,
   code,
   pdf,
@@ -11,6 +12,7 @@ export function Publication({
   title: string;
   authors: string[];
   abstract: string;
+  venue: string;
   link: string;
   code: string;
   pdf: string;
@@ -20,6 +22,7 @@ export function Publication({
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <p className="text-muted-foreground">{authors.join(", ")}</p>
+        <p className="text-muted-foreground">{venue}</p>
       </CardHeader>
       <CardContent>
         <p className="mb-4">{abstract}</p>
