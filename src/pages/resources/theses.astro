@@ -29,6 +29,14 @@ import MainLayout from '../../layouts/main.astro';
             year="2025"
             pdf=""
           />
+          <Thesis
+            title="Leveraging Large Language Models for Trustworthiness Assessment of Web Applications"
+            student='Oleksandr Yarotskyi'
+            advisors={["João R. Campos", "José Alexandre D'Abruzzo Pereira"]}
+            abstract="The widespread adoption of web applications has made their security a critical concern and has increased the need for systematic ways to assess whether they can be considered trustworthy. However, trust assessment remains an open problem as existing techniques primarily focus on detecting known vulnerabilities or depend on manual evaluation, which limits their scalability; therefore, evaluating adherence to secure coding practices provides a complementary, pragmatic perspective by focusing on observable, proactive development behaviors rather than solely on the absence of flaws. In practice, the identification and verification of secure coding practices are predominantly performed manually, relying on expert knowledge and code reviews, which is time-consuming, subjective, and difficult to scale. This study presents an empirical methodology to automate the assessment of trustworthiness in web applications by leveraging Large Language Models (LLMs) to verify adherence to OWASP secure coding practices, with a specific focus on Input Validation. We conduct a comparative analysis of prompt engineering techniques across five state-of-the-art LLMs, ranging from baseline zero-shot classification to prompts enriched with semantic definitions, structural context derived from call graphs, and explicit instructional guidance. Furthermore, we propose an extension of a hierarchical Quality Model (QM) based on the Logic Score of Preference (LSP), in which LLM outputs are used to populate the model’s quality attributes and compute a holistic trustworthiness score. Experimental results indicate that excessive structural context can introduce noise, particularly in lower-capacity models, whereas rule-based instructional prompting improves assessment reliability. The resulting trustworthiness score enables discrimination between secure and vulnerable implementations, supporting the feasibility of using LLMs as automated auditors for scalable, context-aware trust assessment."
+            year="2026"
+            pdf=""
+          />
       </div>
     </div>
   </section>
