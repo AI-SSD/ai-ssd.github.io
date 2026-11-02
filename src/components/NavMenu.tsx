@@ -86,12 +86,14 @@ export function NavMenu() {
                 >
                   Scientific Publications
                 </a>
+                {/*
                 <a
                   href="/resources/tools"
                   className="block px-4 py-2 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground"
                 >
                   Tools
                 </a>
+                */}
                 <a
                   href="/resources/acknowledgements"
                   className="block px-4 py-2 text-sm rounded-sm hover:bg-accent hover:text-accent-foreground"
@@ -109,20 +111,23 @@ export function NavMenu() {
           </div>
 
           {/* Opportunities link */}
+          {/*
           <a
             href="/opportunities"
             className="text-lg font-medium hover:text-primary"
           >
             Opportunities
           </a>
+          */}
 
-          {/* News and Events link */}
+          {/*
           <a
             href="/news-events"
             className="text-lg font-medium hover:text-primary"
           >
             News and Events
           </a>
+          */}
         </nav>
       </div>
 
@@ -195,6 +200,7 @@ export function NavMenu() {
                   >
                     Scientific Publications
                   </a>
+                  {/*
                   <a
                     href="/resources/tools"
                     className="block py-2 text-sm hover:text-primary"
@@ -202,10 +208,12 @@ export function NavMenu() {
                   >
                     Tools
                   </a>
+                  */}
                 </div>
               </div>
 
               {/* Opportunities link for mobile */}
+              {/*
               <a
                 href="/opportunities"
                 className="px-4 py-2 text-lg font-medium hover:text-primary"
@@ -213,8 +221,10 @@ export function NavMenu() {
               >
                 Opportunities
               </a>
+              */}
 
               {/* News and Events link for mobile */}
+              {/*
               <a
                 href="/news-events"
                 className="px-4 py-2 text-lg font-medium hover:text-primary"
@@ -222,6 +232,7 @@ export function NavMenu() {
               >
                 News and Events
               </a>
+              */}
             </nav>
           </div>
         </div>
